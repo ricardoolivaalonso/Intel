@@ -1,0 +1,20 @@
+.news{
+    background-image:
+    linear-gradient(to bottom, rgba($black, 0)  50%, #000000 80%), url("../img/digital-city-main-rwd.jpg.rendition.intel.web.480.480.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__title{
+        text-align: center;
+        margin-bottom: $gap;
+    }
+    @media(min-width: 768px){
+        background-image: url("../img/digital-city-main-rwd.jpg.rendition.intel.web.1280.720.jpg");
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: cover;
+        height: 500px;
+    }
+    @media(min-width: 1024px){ height: 650px; }
+}

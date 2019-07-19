@@ -1,0 +1,78 @@
+.footer{
+    /*1*/
+    &__generic{
+        @media(min-width: 1024px){
+            @include flex(flex, space-around, flex-start, column, wrap);
+            padding: $gap * 2 $gap;
+        }
+    }
+    &-menu__list{
+        @media(min-width: 1024px){
+            @include flex(flex, flex-start, flex-start, row, wrap);
+        }
+    }
+    &-menu__link{
+        color: $black;
+        font-size: 14px;
+        line-height: $gap * 3;
+        cursor: pointer;
+        @media(min-width: 1024px){ margin: 0 $gap; }
+    }
+    /*2*/
+    &-social{
+        margin: $gap * 2 0;
+        @include flex(flex, flex-start, baseline, row, nowrap);
+    }
+    &-social__icon{
+        margin-right: $gap * 1.5;
+        height: 25px;
+        cursor: pointer;
+
+        @media(min-width: 1024px){
+            margin-left: $gap / 3;
+            height: 20px;
+        }
+    }
+    /*3*/
+    &-terms{
+        @include flex(flex, flex-start, flex-start, row, wrap);
+    }
+    &-terms__item{
+        width: 50%;
+        font-size: 12px;
+        min-height: $gap * 2;
+        color: $black;
+        cursor: pointer;
+
+        @media(min-width: 1024px){
+            width: auto;
+            padding-right: $gap * 2;
+            margin: 0 $gap;
+            border-right: 1px solid $black;
+            font-size: 12px;
+            min-height: auto;
+
+            &:nth-last-child(1){
+                border-right: none;
+            }
+        }
+    }
+    /*4*/
+    &__icon{
+        height: 40px;
+        margin-top: $gap;
+        cursor: pointer;
+
+        @media(min-width: 1024px){
+            width: 100px;
+            height: 50px;
+        }
+        @media(min-width: 1200px){
+            width: 100px;
+            height: 200px;
+            padding: $gap * 2;
+            border-right: 1px solid rgba($black , .2);
+        }
+    }
+
+}

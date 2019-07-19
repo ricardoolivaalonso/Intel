@@ -1,0 +1,17 @@
+<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path fill="#ffffff" id="svg_1" d="m58,12a2,2 0 0 0 -0.586,-1.414l-4,-4a2,2 0 0 0 -1.414,-0.586l-2,0l0,-4l-4,0l0,4l-4,0l0,-4l-4,0l0,4l-4,0l0,-4l-4,0l0,4l-4,0l0,-4l-4,0l0,4l-4,0l0,-4l-4,0l0,4l-2,0a2,2 0 0 0 -1.414,0.586l-4,4a2,2 0 0 0 -0.586,1.414l0,2l-4,0l0,4l4,0l0,4l-4,0l0,4l4,0l0,4l-4,0l0,4l4,0l0,4l-4,0l0,4l4,0l0,4l-4,0l0,4l4,0l0,2a2,2 0 0 0 0.586,1.414l4,4a2,2 0 0 0 1.414,0.586l2,0l0,4l4,0l0,-4l4,0l0,4l4,0l0,-4l4,0l0,4l4,0l0,-4l4,0l0,4l4,0l0,-4l4,0l0,4l4,0l0,-4l2,0a2,2 0 0 0 1.414,-0.586l4,-4a2,2 0 0 0 0.586,-1.414l0,-2l4,0l0,-4l-4,0l0,-4l4,0l0,-4l-4,0l0,-4l4,0l0,-4l-4,0l0,-4l4,0l0,-4l-4,0l0,-4l4,0l0,-4l-4,0l0,-2zm-4,39.171l-2.829,2.829l-38.342,0l-2.829,-2.829l0,-38.342l2.829,-2.829l38.342,0l2.829,2.829l0,38.342z"/>
+  <path fill="#ffffff" id="svg_2" d="m48,14l-32,0a2,2 0 0 0 -2,2l0,32a2,2 0 0 0 2,2l32,0a2,2 0 0 0 2,-2l0,-32a2,2 0 0 0 -2,-2zm-2,32l-28,0l0,-28l28,0l0,28z"/>
+  <path fill="#ffffff" id="svg_3" d="m26,26l8,0l0,-4l-10,0a2,2 0 0 0 -2,2l0,10l4,0l0,-8z"/>
+  <rect fill="#ffffff" id="svg_4" y="22" x="38" width="4" height="4"/>
+  <rect fill="#ffffff" id="svg_5" y="38" x="22" width="4" height="4"/>
+  <rect fill="#ffffff" id="svg_6" y="38" x="30" width="4" height="4"/>
+  <path fill="#ffffff" id="svg_7" d="m40,30l-10,0l0,4l8,0l0,8l4,0l0,-10a2,2 0 0 0 -2,-2z"/>
+ </g>
+</svg>

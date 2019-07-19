@@ -1,0 +1,15 @@
+.performance{
+    &__background{
+        background-image: url("../img/homepage-pc-innovations-lme-rwd.jpg.rendition.intel.web.480.270.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+        @media(min-width: 768px){
+            background-image: url("../img/homepage-pc-innovations-lme-rwd.jpg.rendition.intel.web.1280.720.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+.header{
+    &__generic{
+        &:nth-of-type(1){
+            width: 33%;
+            @include flex(flex, flex-start, center, row, nowrap);
+            .header__icon:nth-of-type(1){
+                @media(min-width: 1024px){ display: none; }
+            }
+        }
+        &:nth-of-type(2){
+            width: 33%;
+            @include flex(flex, center, center, row, nowrap);
+        }
+        &:nth-of-type(3){
+            width: 33%;
+            @include flex(flex, flex-end, center, row, nowrap);
+            @media(min-width: 1024px){ padding-right: $gap; }
+        }
+    }
+    &__logo{ height: 30px; }
+    &__icon{
+        width: 20px;
+        margin: 0 $gap / 2;
+        cursor: pointer;
+    }
+    &-dektop__link{
+        display: none;
+        @media(min-width: 1024px){
+            display: inherit;
+            margin: 0 $gap;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+}
+.search-form,
+.login-form,
+.country-form,
+.main-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 100%;
+    min-height: 100vh;
+    background: $menu;
+    overflow-y: scroll;
+    transition: all .3s ease;
+    scrollbar-width: none;
+    @media(min-width: 768px){ width: 450px; }
+}
+.search-form{
+    @include flex(flex, space-between, center, column, wrap);
+    &__input{
+        height: 60px;
+        width: 100%;
+        background: lighten($menu, 10);
+        border: none;
+        outline: none;
+        padding-left: $gap;
+        font-size: 14px;
+        color: $white;
+    }
+}
+.login-form{
+    @include flex(flex, flex-start, center, column, wrap);
+    &__input{
+        height: 50px;
+        width: calc(100% - 30px);
+        border-radius: $radius;
+        background: $white;
+        outline: none;
+        border: none;
+        padding-left: $gap;
+        margin-bottom: $gap;
+
+        &:nth-of-type(1){ margin-top: $gap; }
+    }
+    &__link{
+        margin: $gap;
+        width: calc(100% - 30px);
+    }
+}
+.country-form{
+    @include flex(flex, flex-start, flex-start, column, wrap);
+    &__link{
+        padding: $gap;
+        font-size: 12px;
+    }
+}
+.main-menu{
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    overflow: hidden;
+    &__list{
+        height: calc(100vh - 50px - 60px);
+        overflow-y: scroll;
+    }
+    &__link{
+        font-size: 12px;
+        line-height: 3;
+        padding-left: $gap;
+    }
+    @media(min-width: 768px){
+        top: 60px;
+        left: 0;
+    }
+}

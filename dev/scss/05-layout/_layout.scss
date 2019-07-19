@@ -1,0 +1,134 @@
+@media(min-width: 768px){
+    .section{ position: relative; }
+}
+.g-background{
+    width: 100%;
+    height: 240px;
+    @media(min-width: 768px){
+        height: 500px;
+        position: relative;
+    }
+    @media(min-width: 1024px){ height: 650px; }
+}
+.g-information{
+    width: 100%;
+    background: $imperial;
+    padding: $gap * 2 $gap;
+
+    @media(min-width:640px){
+        @include flex(flex, center, center, column, wrap);
+    }
+    @media(min-width: 768px){
+        position: absolute;
+        z-index: 10;
+        bottom: $gap;
+        width: 90%;
+        left: calc(50% - 45%);
+        background: none;
+    }
+    @media(min-width: 1024px){
+        width: 80%;
+        left: calc(50% - 40%);
+        bottom: 40px;
+    }
+}
+.g-link{
+    width: 100%;
+    min-height: 30px;
+    @include flex(flex, center, center, row, wrap);
+    border-radius: $radius;
+    padding: $gap / 3 $gap;
+    text-align: center;
+    background: $cyan;
+    font-size: 12px;
+    @media(min-width: 640px){
+        width: auto;
+        padding: $gap / 4 $gap * 2;
+    }
+}
+.menu{
+    &__generic{
+        padding: $gap * 1.5 $gap;
+        background: darken($menu, 10);
+        width: 100%;
+        height: 60px;
+        text-align: left;
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: normal;
+    }
+    &__close{
+        position: absolute;
+        z-index: 150;
+        top: $gap;
+        right: $gap;
+        height: 30px;
+        cursor: pointer;
+    }
+    &__span{
+        color: $white;
+        font-size: 12px;
+        padding: 0 $gap;
+        a{ color: $cyan; }
+    }
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 50px;
+    @include flex(flex, flex-end, center, row, nowrap);
+    background: $blue;
+    padding: 0 $gap / 3;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.24);
+
+    @media(min-width: 768px){ height: 60px; }
+    @media(min-width: 1400px){
+        max-width: 1400px;
+        left: calc(50% - 700px)
+    }
+}
+.news{
+    width: 100%;
+    height: 475px;
+    @include flex(flex, flex-end, center, column, wrap);
+    padding: $gap $gap $gap * 3 $gap;
+    margin-top: 50px;
+
+    @media(min-width: 768px){ margin-top: 60px; }
+}
+.resources{
+    width: 100%;
+    height: auto;
+    @include flex(flex, space-between, baseline, row, nowrap);
+    background: $imperial;
+    padding: $gap;
+    @media(min-width: 768px){
+        @include flex(flex, center, baseline, row, nowrap);
+        min-height: 100px;
+    }
+}
+.banner{
+    width: 100%;
+    height: 300px;
+    background: $blue;
+    padding: $gap;
+    overflow: hidden;
+
+    @media(min-width: 768px){ height: 500px; }
+}
+.footer{
+    width: 100%;
+    background: $gray;
+    padding: $gap * 2;
+    @media(min-width: 768px){ padding: $gap * 4 $gap * 6; }
+    @media(min-width: 1024px){
+        @include flex(flex, flex-end, flex-start, row-reverse, wrap);
+        padding: $gap * 2;
+    }
+    @media(min-width: 1200px){
+        @include flex(flex, flex-end, flex-start, row-reverse, nowrap);
+    }
+}

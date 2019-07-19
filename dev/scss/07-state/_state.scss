@@ -1,0 +1,20 @@
+.is-menu-hide{
+    transition: all .3s ease;
+    transform: translateX(100vw);
+}
+.is-menu-show{
+    transition: all .3s ease;
+    transform: translateX(0);
+}
+.is-menu-hide-left{
+    transition: all .3s ease;
+    transform: translateX(-100vw);
+}
+.is-menu-show-left{
+    transition: all .3s ease;
+    transform: translateX(0);
+}
+.is-100vh{
+    // height: 100vh;
+    overflow: hidden;
+}

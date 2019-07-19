@@ -1,0 +1,70 @@
+header.header
+    div.header__generic
+        img.header__icon.show-menu(src="img/menu.svg", alt="Ícono de intel")
+        a.header-dektop__link.show-menu(href="#") Productos
+        a.header-dektop__link.show-menu(href="#") Soluciones
+        a.header-dektop__link.show-menu(href="#") Asistencia
+    div.header__generic
+        img.header__logo(src="img/intel-white.svg", alt="Ícono de intel")
+        h1.header__title.is-menu-hide INTEL
+    div.header__generic
+        img.header__icon#show-country(src="img/world.svg", alt="Ícono de intel")
+        img.header__icon#show-login(src="img/user.svg", alt="Ícono de intel")
+        img.header__icon#show-search(src="img/search.svg", alt="Ícono de intel")
+            
+    form(id="search-form").search-form.is-menu-hide
+        input.search-form__input(type="text", placeholder="Search intel.com")
+        div.menu__generic
+            span.menu__span #[a(href="#") Iniciar sesión] para acceder al contenido restringido
+        img.menu__close(src="img/close.svg", alt="Ícono de cerrar")#close-search
+            
+    form(id="login-form").login-form.is-menu-hide
+        span.menu__generic Iniciar sesión
+        input.login-form__input(type="text", placeholder="Nombre de usuario")
+        input.login-form__input(type="password", placeholder="Contraseña")
+        span.menu__span Al iniciar sesión, usted acepta nuestros #[a(href="#") Terminos de servicios] 
+        a.login-form__link.g-link(href="#") Iniciar sesión
+        img.menu__close(src="img/close.svg", alt="Ícono de cerrar")#close-login
+        
+    form(id="country-form").country-form.is-menu-hide
+        span.menu__generic Seleccione su región
+        a.country-form__link(href="#") Asia Pacific
+        a.country-form__link(href="#") Europe
+        a.country-form__link(href="#") Latin America
+        a.country-form__link(href="#") Middle East/Africa
+        a.country-form__link(href="#") North America
+        img.menu__close(src="img/close.svg", alt="Ícono de cerrar")#close-country
+        
+    nav.main-menu#main-menu.is-menu-hide-left
+      
+        h2.menu__generic Productos
+        
+        ul.main-menu__list
+            li.main-menu__item
+                a.main-menu__link(href="#") Dispositivos y sistemas
+            li.main-menu__item
+                a.main-menu__link(href="#") Procesadores
+            li.main-menu__item
+                a.main-menu__link(href="#") Placas y Kits
+            li.main-menu__item
+                a.main-menu__link(href="#") Chipsets
+            li.main-menu__item
+                a.main-menu__link(href="#") FPGA y dispositivos programables
+            li.main-menu__item
+                a.main-menu__link(href="#") Soluciones y energía
+            li.main-menu__item
+                a.main-menu__link(href="#") Memoria y almacenamiento
+            li.main-menu__item
+                a.main-menu__link(href="#") Productos para servidor
+            li.main-menu__item
+                a.main-menu__link(href="#") Comunicaciones de red E/S
+            li.main-menu__item
+                a.main-menu__link(href="#") Tecnología inalámbrica
+            li.main-menu__item
+                a.main-menu__link(href="#") Software y servicios
+            li.main-menu__item
+                a.main-menu__link(href="#") Intel Gateways
+            li.main-menu__item
+                a.main-menu__link(href="#") Tecnologías
+            li.main-menu__item
+                a.main-menu__link(href="#") Cómo comprar

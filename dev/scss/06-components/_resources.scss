@@ -1,0 +1,22 @@
+.resources{
+    &__item{
+        width: 25%;
+        padding: $gap / 2;
+        @include flex(flex,center, center, column, wrap);
+        cursor: pointer;
+        &:hover{ color: $cyan; }
+        &:nth-of-type(5){ display: none; }
+
+        @media(min-width: 768px){
+            width: 125px;
+            padding: $gap $gap * 2;
+            &:nth-of-type(5){ display: inherit; }
+        }
+    }
+    &__icon{
+        margin: $gap / 3;
+        height: 30px;
+        @media(min-width: 1024px){ margin: $gap / 2; }
+    }
+
+}

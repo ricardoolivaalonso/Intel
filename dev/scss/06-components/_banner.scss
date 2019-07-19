@@ -1,0 +1,32 @@
+.banner{
+    &__title{
+        text-align: center;
+        width: 100%;
+        @media(min-width: 768px){
+            font-size: 32px;
+            margin-top: $gap;
+        }
+        @media(min-width: 1024px){
+            font-size: 48px;
+            margin-top: $gap * 2;
+        }
+    }
+    &__list{
+        align-self: flex-end;
+        height: 100%;
+        @include flex(flex, center, center, row, nowrap);
+
+    }
+    &__item{
+        @include flex(flex, center, center, column, wrap);
+        cursor: pointer;
+
+        @media(min-width: 768px){ padding: $gap; }
+        @media(min-width: 1024px){ padding: 70px; }
+    }
+    &__span{
+        font-size: 12px;
+        opacity: .7;
+        @media(min-width: 768px){ font-size: 14px; }
+    }
+}
